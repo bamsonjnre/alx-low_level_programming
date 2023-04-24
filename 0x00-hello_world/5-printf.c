@@ -1,31 +1,17 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * rev_string - reverses a string
- *
- * @s: char
- *
- * Returns: 0
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 
-void rev_string(char *s)
+int main(void)
+
 {
-	char *start, *end, tmp;
-	int sen = 0, b;
 
-	while (*(s + sen) != '\0')
-		sen++;
-	start = s;
-	end = s;
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 
-	for (b = 0; b < sen - 1; b++)
-		end++;
-	for (b = 0; b < sen / 2; b++)
-	{
-		tmp = *end;
-		*end = *start;
-		*start = tmp;
-		start++;
-		end--;
-	}
+	return (0);
+
 }
