@@ -1,31 +1,26 @@
 #include "main.h"
 
 /**
- * rev_string - reverses a string
+ * puts2 - prints every character of a string
  *
- * @s: char
+ * @str: character
  *
- * Returns: 0
+ * Return: 0
  */
 
-void rev_string(char *s)
+void puts2(char *str)
 {
-	char *start, *end, tmp;
-	int sen = 0, b;
+	int sen = 0;
 
-	while (*(s + sen) != '\0')
-		sen++;
-	start = s;
-	end = s;
-
-	for (b = 0; b < sen - 1; b++)
-		end++;
-	for (b = 0; b < sen / 2; b++)
+	while (sen >= 0)
 	{
-		tmp = *end;
-		*end = *start;
-		*start = tmp;
-		start++;
-		end--;
+		if (str[sen] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		if (sen % 2 == 0)
+			_putchar(str[sen]);
+		sen++;
 	}
 }
