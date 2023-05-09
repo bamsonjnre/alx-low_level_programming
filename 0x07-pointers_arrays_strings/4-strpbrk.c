@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * _strpbrk - function searches a string for any set of bytes
- * @s: string
- * @accept:
+ * *_strpbrk - function searches a string for any set of bytes
+ * @s: string to search
+ * @accept: string containing the bytes to look for
  *
  * Return: s
  */
